@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4DEF97F326491E8000E0994C /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF97F226491E8000E0994C /* APIClient.swift */; };
 		4DEF97F526491EA400E0994C /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF97F426491EA400E0994C /* Request.swift */; };
+		4DEF97F726491FE800E0994C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF97F626491FE800E0994C /* NetworkError.swift */; };
 		AB9F57FA243D54F1006612A3 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F57F8243D54F1006612A3 /* MovieCell.swift */; };
 		AB9F57FB243D54F1006612A3 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB9F57F9243D54F1006612A3 /* MovieCell.xib */; };
 		AB9F57FE243D57FF006612A3 /* MovieSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F57FD243D57FF006612A3 /* MovieSection.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		4DEF97F226491E8000E0994C /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		4DEF97F426491EA400E0994C /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		4DEF97F626491FE800E0994C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		AB9F57F8243D54F1006612A3 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		AB9F57F9243D54F1006612A3 /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
 		AB9F57FD243D57FF006612A3 /* MovieSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSection.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			children = (
 				4DEF97F226491E8000E0994C /* APIClient.swift */,
 				4DEF97F426491EA400E0994C /* Request.swift */,
+				4DEF97F626491FE800E0994C /* NetworkError.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				ABAB4F0A241A172E001E85CA /* SceneDelegate.swift in Sources */,
 				4DEF97F526491EA400E0994C /* Request.swift in Sources */,
 				AB9F57FE243D57FF006612A3 /* MovieSection.swift in Sources */,
+				4DEF97F726491FE800E0994C /* NetworkError.swift in Sources */,
 				4DEF97F326491E8000E0994C /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
