@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Kingfisher
 
 class TitleCell: UICollectionViewCell {
     static var identifier: String = "TitleCell"

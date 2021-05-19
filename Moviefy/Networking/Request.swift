@@ -16,14 +16,21 @@ public enum HTTPMethod: String {
      case delete = "DELETE"
  }
 
- public enum Route: String {
-     case movies = "discover/movie"
- }
+public enum Route: String {
+    case movies = "discover/movie"
+    case config = "configuration"
+    case token = "authentication/token/new"
+    case session = "authentication/session/new"
+    case account = "account"
+}
 
 struct Request {
+    
+    public static let baseImageURL = URL(string: "https://image.tmdb.org/t/p/w500")!
+    
      static let headers = [
          "Accept":"Application/json",
-         "Content-Type":"Applicatoin/json",
+         "Content-Type":"Application/json",
          "Authorizatoin":"e876d92222f5e25dbca0fa994d4bafad"
      ]
     
@@ -34,6 +41,7 @@ struct Request {
         var request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10.0)
         request.httpMethod = method.rawValue
         request.httpBody = body
+        
         try configureParametersAndHeaders(parameters: parameters, headers: headers, request: &request)
         return request
     }
