@@ -22,6 +22,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.title = "Home"
         self.view.backgroundColor = UIColor.white
+        setupMovieDBConfig()
         fetchPopular()
     }
     
@@ -37,6 +38,21 @@ class ViewController: UIViewController {
         collectionView.register(UINib(nibName: MovieCell.identifier, bundle: .main), forCellWithReuseIdentifier: MovieCell.identifier)
         collectionView.register(UINib(nibName: TitleCell.identifier, bundle: .main), forCellWithReuseIdentifier: TitleCell.identifier)
         self.view.addSubview(collectionView)
+    }
+    
+    func setupMovieDBConfig() {
+        APIClient.shared.getImageConfiguration() { result in
+            switch result {
+            case let .success(dbConfig):
+                DispatchQueue.main.async {
+                    MovieDBConfiguration.current = dbConfig
+                    // Print it out to see what we got, if anything
+                    print(dbConfig)
+                }
+            case let .failure(error):
+                print(error)
+            }
+        }
     }
     
     func fetchPopular(){
