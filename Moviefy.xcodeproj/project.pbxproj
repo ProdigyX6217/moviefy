@@ -13,6 +13,9 @@
 		4DEF97F726491FE800E0994C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF97F626491FE800E0994C /* NetworkError.swift */; };
 		4DEF97F92649244D00E0994C /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEF97F82649244D00E0994C /* Encoder.swift */; };
 		4DF9C2EC2654CB43004D5C88 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF9C2EB2654CB43004D5C88 /* LoginViewController.swift */; };
+		4DF9C2F02654DFFE004D5C88 /* AuthenticationTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF9C2EF2654DFFE004D5C88 /* AuthenticationTokenResponse.swift */; };
+		4DF9C2F22654E017004D5C88 /* CreateSessionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF9C2F12654E017004D5C88 /* CreateSessionResponse.swift */; };
+		4DF9C2F42654E028004D5C88 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF9C2F32654E028004D5C88 /* Account.swift */; };
 		AB9F57FA243D54F1006612A3 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F57F8243D54F1006612A3 /* MovieCell.swift */; };
 		AB9F57FB243D54F1006612A3 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB9F57F9243D54F1006612A3 /* MovieCell.xib */; };
 		AB9F57FE243D57FF006612A3 /* MovieSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F57FD243D57FF006612A3 /* MovieSection.swift */; };
@@ -51,6 +54,9 @@
 		4DEF97F626491FE800E0994C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		4DEF97F82649244D00E0994C /* Encoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encoder.swift; sourceTree = "<group>"; };
 		4DF9C2EB2654CB43004D5C88 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4DF9C2EF2654DFFE004D5C88 /* AuthenticationTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTokenResponse.swift; sourceTree = "<group>"; };
+		4DF9C2F12654E017004D5C88 /* CreateSessionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSessionResponse.swift; sourceTree = "<group>"; };
+		4DF9C2F32654E028004D5C88 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		AB9F57F8243D54F1006612A3 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		AB9F57F9243D54F1006612A3 /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
 		AB9F57FD243D57FF006612A3 /* MovieSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSection.swift; sourceTree = "<group>"; };
@@ -125,6 +131,9 @@
 			isa = PBXGroup;
 			children = (
 				AB9F580F243D6820006612A3 /* Movie.swift */,
+				4DF9C2EF2654DFFE004D5C88 /* AuthenticationTokenResponse.swift */,
+				4DF9C2F12654E017004D5C88 /* CreateSessionResponse.swift */,
+				4DF9C2F32654E028004D5C88 /* Account.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -245,6 +254,7 @@
 			files = (
 				4DF9C2EC2654CB43004D5C88 /* LoginViewController.swift in Sources */,
 				AB9F5800243D62FF006612A3 /* TitleSection.swift in Sources */,
+				4DF9C2F02654DFFE004D5C88 /* AuthenticationTokenResponse.swift in Sources */,
 				AB9F5803243D6327006612A3 /* TitleCell.swift in Sources */,
 				ABAB4F0C241A172E001E85CA /* ViewController.swift in Sources */,
 				ABAB4F08241A172E001E85CA /* AppDelegate.swift in Sources */,
@@ -253,8 +263,10 @@
 				4D1A4FA82649A0DD00D2B79B /* Response.swift in Sources */,
 				ABAB4F0A241A172E001E85CA /* SceneDelegate.swift in Sources */,
 				4DEF97F526491EA400E0994C /* Request.swift in Sources */,
+				4DF9C2F42654E028004D5C88 /* Account.swift in Sources */,
 				4DEF97F92649244D00E0994C /* Encoder.swift in Sources */,
 				AB9F57FE243D57FF006612A3 /* MovieSection.swift in Sources */,
+				4DF9C2F22654E017004D5C88 /* CreateSessionResponse.swift in Sources */,
 				4DEF97F726491FE800E0994C /* NetworkError.swift in Sources */,
 				4DEF97F326491E8000E0994C /* APIClient.swift in Sources */,
 			);
